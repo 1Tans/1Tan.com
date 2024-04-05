@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebTan</title>
+<link rel="stylesheet" href="css.css">
+
+<script>
+  function shakeImage(element) {
+      element.style.transform = "translateX(-10px)"; /* เคลื่อนไหวรูปภาพไปทางด้านซ้ายเล็กน้อยเมื่อชี้เมาส์ */
+  }
+
+  function resetImage(element) {
+      element.style.transform = "none"; /* รีเซ็ตตำแหน่งของรูปภาพเมื่อไม่ได้ชี้เมาส์ */
+  }
+
+</script>
+<header>
+  
+  <div class="container"></div>
+  <h1>iTan!</h1>
+  <nav>
+      <ul>
+      </ul>
+  </nav>
+</header>
+</head>
+<body>
+  <div class="container">
+
+    <div class="box">
+      <div class="text"></div>
+    <div class="img"></div>
+      <a href="https://www.instagram.com/nat_tzc/"> <!-- เปลี่ยน page1.html เป็น URL ของหน้าที่คุณต้องการนำไป -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Image 1"onmouseover="shakeImage(this)" onmouseleave="resetImage(this)">
+        <p>instagram</p>
+    </div>
+
+    <div class="box">
+      <div class="text"></div>
+      <a href="https://blacklist01-2b6d2.web.app/"> <!-- เปลี่ยน page1.html เป็น URL ของหน้าที่คุณต้องการนำไป -->
+        <img src="https://i.pinimg.com/736x/3e/e9/12/3ee912433ff51be233eb9117400da303.jpg" alt="Image 1"onmouseover="shakeImage(this)" onmouseleave="resetImage(this)">
+        <p>Album</p>
+    </div>
+    
+    <div class="box">
+      <div class="text"></div>
+      <a href="https://www.facebook.com/profile.php?id=100087376757319"> <!-- เปลี่ยน page1.html เป็น URL ของหน้าที่คุณต้องการนำไป -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/480px-Facebook_Logo_%282019%29.png" alt="Image 1"onmouseover="shakeImage(this)" onmouseleave="resetImage(this)">
+        <p>facebook</p>
+</div>
+
+</body>
+</html>

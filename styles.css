@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+    background-image: url(https://cdn.pixabay.com/photo/2023/05/12/03/09/city-7987508_1280.jpg);
+  }
+  
+  .header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.903));
+    color: #ffffff;
+    padding: 200px;
+    font-size: 60px;
+    text-align: center;
+    margin: 0px;
+    border-radius: 12px;
+
+  }
+  strong{
+    text-shadow: 0 0 10px #b0b0b0, 0 0 10px #b0b0b0, 0 0 20px #b0b0b0, 0 0 30px #b0b0b0, 0 0 40px #b0b0b0, 0 0 50px #b0b0b0, 0 0 60px #b0b0b0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  img{
+    width: 40px;
+    position: absolute; /* กำหนดให้รูปอยู่ในตำแหน่งแน่นอนภายใน header */
+    top: 25px; /* ย้ายรูปไปด้านบนสุด */
+    left: 30px; /* ย้ายรูปไปด้านซ้ายสุด */
+    max-width: 100%; /* รักษาขนาดภาพให้ไม่เกินขนาดของคอนเทนเนอร์ */
+    height: auto; /* ปรับสัดส่วนความสูงโดยอัตโนมัติ */
+    cursor: pointer;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  .menu ul {
+    list-style-type: none;
+    margin: 20;
+    padding: 0;
+    list-style: none;
+    width: 1500px;
+    position: relative;
+    left: 160%;
+
+  }
+  li{
+    position: relative;
+    width: 900px;
+    
+  }
+
+
+  .menu li {
+    position: relative;
+    margin: 0 0px;
+    border-radius: 12px;
+    padding: 5px;
+    margin-bottom: 7px;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
+    text-decoration: none; /* ลบเส้นใต้ล่างตัวอักษรลิงค์ */
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu li:hover {
+    background-color: #393939;
+  }
+  
+ 
+  
+  .footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+  }
+
+
+  .svg_preloader {
+    width: 40px;
+    height: 40px;
+    position: absolute; /* กำหนดให้รูปอยู่ในตำแหน่งแน่นอนภายใน header */
+    top: 25px; /* ย้ายรูปไปด้านบนสุด */
+    right: 30px; /* ย้ายรูปไปด้านซ้ายสุด */
+    max-width: 100%; /* รักษาขนาดภาพให้ไม่เกินขนาดของคอนเทนเนอร์ */
+    height: auto; /* ปรับสัดส่วนความสูงโดยอัตโนมัติ */
+    cursor: pointer;
+  }
